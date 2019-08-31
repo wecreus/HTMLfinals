@@ -1,0 +1,22 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #cdcfd3;
+    background-color: #23272a;
+    font-family: Helvetica sans-serif;
+    font-size: 18px;
+}
+
+nav {
+
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a{
+    color: inherit;
+    text-decoration: none;
+}
