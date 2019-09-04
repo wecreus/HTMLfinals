@@ -251,6 +251,9 @@ footer {
     .twitterLogo, .instagramLogo{
         width: 27px;
     }
+    body .mainContent {
+        padding-bottom: 220px;
+    }
 }
 
 
@@ -259,7 +262,7 @@ footer {
 
 
 /* main content */
-body .mainContent {
+.mainContent {
     position: static;
     max-width: 1200px;
     min-width: 720px;
