@@ -80,8 +80,9 @@ header .logo {
     padding: 5px;
     cursor:pointer;
 }
-/* for smaller screens */
 
+
+/* for smaller screens */
 .menuWrap {
     display: none;
     margin-right: 2px;
@@ -124,6 +125,45 @@ header .logo {
         float: right;
     }
 }
+
+
+header .menuSlider {
+    width: 80vw;
+    height: 400px;
+    background: #4E555C;
+    position: absolute;
+    top: 60px;
+    left: 100vw;
+    opacity: 0;
+    box-shadow: -22px 22px 30px -9px rgba(0,0,0,0.4);
+}
+
+header .menuSlider div{
+    display: block;
+    margin: 0;
+    padding-left: 10vw;
+    height: 80px;
+    width: 80vw;
+    line-height: 80px;
+    text-align: left;
+    color: white;
+    cursor:pointer;
+    font-size: 130%;
+}
+
+header .menuSlider div:hover, header .menuSlider div:active {
+    background: #79848e;
+}
+
+
+header .menuWrap .checkBox:checked ~ .menuSlider {
+    opacity: 1;
+    left: 20vw;
+    transition: left 0.3s ease-in-out;
+}
+
+
+
 
 
 /* main content */
