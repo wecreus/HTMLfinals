@@ -270,6 +270,11 @@ footer {
 
 
 /* main content */
+.forFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .merchContentHolder {
     width: 100%;
     min-width: 200px;
@@ -277,30 +282,55 @@ footer {
     padding-top: 80px;
     padding-bottom: 100px;
     margin: 0 auto;
-    display: grid;
-    display: -ms-grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    -ms-grid-columns: minmax(400px, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.merchContentHolder div{
-    height: 500px;
-    width: 400px;
-    display: block;
-}
-.first {
-    background: black;
-}
-
-
-.second {
-    background: red;
+.merchContentHolder .item{
+    height: 400px;
+    width: 280px;
+    padding: 5px;
+    background-color: #48494c;
+    border: 1px solid #7a7c81;
+    border-radius: 15px;
+    margin: 10px;
 }
 
-.third {
-    background: blue;
+
+.merchContentHolder .item:hover{
+    background-color: #48494c;
 }
 
-.fourth {
-    background: yellow;
+.merchContentHolder img {
+    width: 270px;
+}
+
+.merchContentHolder .itemCaption {
+    text-align: center;
+    font-size: 120%;
+}
+
+.merchContentHolder .itemSell {
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 10px auto;
+    border: 1px solid #5e5f63;
+    background: #4e555c;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 50px;
+    font-size: 130%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .merchContentHolder .item{
+        height: 370px;
+        width: 250px;
+    }
+    .merchContentHolder img {
+        width: 240px;
+    }
+
 }
