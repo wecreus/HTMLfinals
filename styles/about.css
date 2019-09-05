@@ -262,172 +262,44 @@ footer {
     .twitterLogo, .instagramLogo{
         width: 27px;
     }
-    body .indexContentHolder {
+    body .aboutContentHolder {
         padding-bottom: 220px;
     }
 }
 
 
 
-
-
-
 /* main content */
-.indexContentHolder {
-    max-width: 1200px;
-    padding-top: 60px;
+.aboutContentHolder {
+    width: 100%;
+    min-width: 200px;
+    max-width: 1000px;
+    padding-top: 80px;
     padding-bottom: 100px;
     margin: 0 auto;
     display: grid;
     display: -ms-grid;
-    width: auto;
-    -ms-grid-columns: 1fr 1fr;
-    -ms-grid-rows: auto 1fr auto 1fr;
-    grid-template-columns: [c1s] minmax(150px, 600px) [c2s] minmax(150px, 600px) [c2e];
-    grid-template-rows: [r1s] auto [r2s] 1fr [r3s] auto [r4s] 1fr [r4e];
-}
-.newAlbumAnnouncement {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    -ms-grid-row: 1;
-    grid-column: c1s / c2e;
-    grid-row: r1s;
-    margin: 30px auto 10px auto;
-    text-align: center;
-}
-.albumCover {
-    -ms-grid-column: 1;
-    -ms-grid-row: 2;
-    grid-column: c1s;
-    grid-row: r2s;
-
-    margin: auto 0 auto auto;
-}
-.trackList {
-    -ms-grid-column: 2;
-    -ms-grid-row: 2;
-    grid-column: c2s / c2e;
-    grid-row: r2s;
-    margin-left: 30px;
-}
-.listenAnnouncement {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    -ms-grid-row: 3;
-    grid-column: c1s / c2e;
-    grid-row: r3s;
-    margin: 30px auto 10px auto;
-    text-align: center;
-}
-.indexContentHolder iframe {
-    -ms-grid-column: 2;
-    -ms-grid-row: 4;
-    grid-column: c2s;
-    grid-row: r4s;
-    margin-right: auto;
-}
-.servicesIcons {
-    -ms-grid-column: 1;
-    -ms-grid-row: 4;
-    grid-column: c1s;
-    grid-row: r4s;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
 }
 
-.indexContentHolder p {
-    font-size: 150%;
-    font-family: ralewaybold, sans-serif;
-}
-
-.trackList ul{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 10px;
-}
-
-.trackList li {
-    padding-left: 1em;
-    text-indent: -1em;
-    margin-bottom: 4px;
-}
-
-.trackList li:before {
-    content: "☹";
-    padding-right: 5px;
-    font-size: 75%;
-}
-
-.servicesIcons {
-    height: 300px;
-    padding: 0;
-}
-.servicesIcons img{
-    display: block;
-    height: 80px;
+.aboutContentHolder img {
+    max-width: 340px;
+    min-width: 100px;
     padding: 10px;
-    cursor: pointer;
-    margin-left: auto;
+    margin: 0 auto;
 }
-/* query for main content */
-@media only screen and (max-width: 1000px) {
-    .indexContentHolder {
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: auto auto auto auto auto auto;
-        grid-template-columns: [c1s] auto [c1e];
-        grid-template-rows: [r1s] auto [r2s] auto [r3s] auto [r4s] auto [r5s] auto [r6s] auto [r6e];
-    }
-    .newAlbumAnnouncement {
-        -ms-grid-column: 1;
-        -ms-grid-row: 1;
-        grid-column: c1s;
-        grid-row: r1s;
-        margin: 30px auto 10px auto;
-        text-align: center;
-        font-size: 80%;
-    }
-    .albumCover {
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
-        grid-column: c1s;
-        grid-row: r2s;
-        margin: auto;
-    }
-    .trackList {
-        -ms-grid-column: 1;
-        -ms-grid-row: 3;
-        grid-column: c1s;
-        grid-row: r3s;
-        width: 200px;
-        margin: 0 auto;
 
-    }
-    .listenAnnouncement {
-        -ms-grid-column: 1;
-        -ms-grid-row: 4;
-        grid-column: c1s;
-        grid-row: r4s;
-        margin: 30px auto 10px auto;
-        text-align: center;
-        font-size: 80%;
-    }
-    .indexContentHolder iframe {
-        -ms-grid-column: 1;
-        -ms-grid-row: 5;
-        grid-column: c1s;
-        grid-row: r5s;
-        margin: auto;
-        width: 90vw;
-        height: 52vw;
-    }
-    .servicesIcons {
-        -ms-grid-column: 1;
-        -ms-grid-row: 6;
-        grid-column: c1s;
-        grid-row: r6s;
-    }
-    .servicesIcons img {
+.aboutContentHolder .text {
+    min-width: 300px;
+    max-width: 1200px;
+    float: right;
+    text-align: center;
+}
 
 
-        margin: auto;
+@media only screen and (max-width: 745px) {
+    .aboutContentHolder img {
+        width: 250px;
     }
-
 }
