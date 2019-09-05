@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 </head>
 <body>
+<script src="script/gallery.js"></script>
 <header class="menu">
     <nav>
         <img src="img/logo.png" alt="logo" height="50px" class="logo" onclick="location.href='index.html';">
@@ -38,6 +39,15 @@
 
 <div class="galleryContentHolder">
 
+    <img class="imageItself" src='img/1.jpg' alt='first'>
+    <img class="imageItself" src='img/2.jpg' alt='second'>
+    <img class="imageItself" src="img/3.jpg" alt="third">
+    <img class="imageItself" src="img/4.jpg" alt="fourth">
+    <img class="imageItself" src="img/5.jpg" alt="fifth">
+    <div class="buttonHolder">
+        <div class="left button" onclick="plusDivs(-1)">&#10094; prev</div>
+        <div class="right button" onclick="plusDivs(+1)">next &#10095;</div>
+    </div>
 </div>
 
 <footer>
