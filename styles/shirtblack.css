@@ -262,78 +262,117 @@ footer {
     .twitterLogo, .instagramLogo{
         width: 27px;
     }
-    body .merchContentHolder {
+    body .shirtblackContentHolder {
         padding-bottom: 220px;
     }
 }
 
-
-
 /* main content */
-.forFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.merchContentHolder {
+
+.shirtblackContentHolder {
     width: 100%;
     min-width: 200px;
     max-width: 1200px;
     padding-top: 80px;
     padding-bottom: 100px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    margin: 20px auto 0 auto;
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-.merchContentHolder .item{
+.shirtblackContentHolder img {
+    float: right;
     height: 400px;
-    width: 280px;
-    padding: 5px;
-    background-color: #48494c;
-    border: 1px solid #7a7c81;
-    border-radius: 15px;
-    margin: 10px;
-    opacity: 0.6;
-    cursor: pointer;
+    width: 400px;
+    margin: 0 10px 0 auto;
+    -ms-grid-column: 1;
+
+    grid-column: 1;
+
 }
 
+.infoHolder {
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto 0 0;
+    -ms-grid-column: 2;
 
-.merchContentHolder .item:hover{
-    background-color: #48494c;
-    opacity: 1;
+    grid-column: 2;
+
+    padding: 10px;
 }
 
-.merchContentHolder img {
-    width: 270px;
+.infoHolder .itemName {
+    font-family: ralewaybold;
+    font-size: 150%;
 }
 
-.merchContentHolder .itemCaption {
-    text-align: center;
+.infoHolder .itemDesc {
+    margin-top: 2em;
     font-size: 120%;
+    height: 230px;
+}
+.infoHolder label {
+    display: inline-block;
+    font-size: 120%;
+    height: 27px;
+    line-height: 27px;
+    vertical-align: center;
+}
+.infoHolder select {
+    font-family: ralewaybold;
+    display: inline-block;
+    float: right;
+    width: 100px;
+    font-size: 120%;
+    text-align: center;
+    height: 27px;
+    margin-right: 5px;
 }
 
-.merchContentHolder .itemSell {
+
+.infoHolder .itemButton {
     width: 200px;
     height: 50px;
-    margin: 30px auto 10px auto;
+    margin: 15px 5px 0 auto;
     border: 1px solid #5e5f63;
     background: #4e555c;
     text-align: center;
     border-radius: 50px;
     line-height: 50px;
     font-size: 130%;
+    display: block;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
-@media only screen and (max-width: 1000px) {
-    .merchContentHolder .item{
-        height: 370px;
-        width: 250px;
-    }
-    .merchContentHolder img {
-        width: 240px;
-    }
 
+@media only screen and (max-width: 700px) {
+    .shirtblackContentHolder {
+        -ms-grid-columns: minmax(300px, 1fr);
+        -ms-grid-rows: 320px 500px;
+        grid-template-columns: minmax(300px, 1fr);
+        grid-template-rows: 320px 500px;
+    }
+    .shirtblackContentHolder img {
+        margin: 10px auto;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        grid-column: 1;
+        grid-row: 1;
+        width: 300px;
+        height: 300px;
+    }
+    .infoHolder {
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
