@@ -289,7 +289,7 @@ footer {
     width: 90%;
     margin: 10px auto;
     display: none;
-
+    border-radius: 15px;
 }
 
 .buttonHolder {
@@ -328,4 +328,8 @@ footer {
     transition-property: border, color, background;
     transition-duration: 500ms;
     transition-timing-function: ease-out;
+}
+
+.button:active {
+    opacity: 0.5;
 }

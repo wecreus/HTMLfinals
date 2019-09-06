@@ -277,9 +277,91 @@ footer {
     padding-top: 80px;
     padding-bottom: 100px;
     margin: 0 auto;
-    display: grid;
-    display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
 
+.signUpComment {
+    width: 95%;
+    text-align: center;
+    font-size: 120%;
+    padding: 5px;
+    margin: auto;
+}
+.signupContentHolder form {
+    width: 360px;
+    margin: 10px auto;
+}
+.inputHolder {
+    background: #4E555C;
+    border: 1px solid #8c98a5;
+    width: 360px;
+    border-radius: 5px;
+}
+
+.inputHolder input{
+    display: block;
+    height: 40px;
+    font-size: 130%;
+    width: 350px;
+    background: none;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    font-family: ralewaymedium;
+}
+
+.signupContentHolder .inputHolder input:focus{
+    background: #69727a;
+}
+
+
+.inputHolder ::placeholder {
+    color: #adb0b4;
+    font-size: 80%;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.inputHolder :-ms-input-placeholder {
+    color: #adb0b4;
+    font-size: 80%;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+
+
+.signupContentHolder input[type=submit]{
+    margin-top: 20px;
+    font-family: ralewaybold;
+    font-size: 140%;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #5e5f63;
+    border-radius: 25px;
+    color: #cdcfd3;
+    cursor: pointer;
+    background: linear-gradient(#23272a 0%, #23272a 20%, rgb(42, 171, 178) 60%);
+    background-size:1px 400px;
+}
+
+.signupContentHolder #submit:hover, .signupContentHolder #submit:active{
+    color: white;
+    border: 2px solid white;
+    background-position: 400px;
+    transition-property: border, color, background;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+@media only screen and (max-width: 400px) {
+    .signupContentHolder form {
+        width: 290px;
+    }
+    .inputHolder {
+        width: 290px;
+    }
+    .inputHolder input {
+        width: 280px;
+    }
 }
